@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Calculator</title>
+</head>
+<body>
+
+    <h2>Addition Calculator</h2>
+
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+
+    <button onclick="add()">Add</button>
+
+    <div id="result"></div>
+
+    <script>
+        function add() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+
+            let answer = num1 + num2;
+
+            document.getElementById("result").innerHTML =
+                "Answer: " + answer;
+        }
+    </script>
+
+</body>
+</html>
